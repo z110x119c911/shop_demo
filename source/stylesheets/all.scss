@@ -1,0 +1,46 @@
+@import "functions";
+@import "helpers/variables";
+@import "mixins";
+
+@import "bootstrap";
+
+//@import "node_modules/animate-sass/animate";
+//@import "components/animation";
+body{
+    font-family: 'Barlow', sans-serif;
+}
+
+
+.dropdown-menu a:hover .sub-menu {
+    visibility: visible;
+}
+.dropdown:hover .dropdown-menu {
+    display: block;
+    transition: all 5s;
+}
+// .dropdown-menu a:hover .slide_animate {
+//     opacity: 0;
+//     transition: all 0.5s; 
+// }
+// .dropdown:hover:hover .dropdown-menu{
+//     display: block;
+//     opacity: 1;
+// }
+
+// .slide_animate {
+//   opacity: 0;
+//   -webkit-transform: translateX(50px);
+//           transform: translateX(50px);
+//   transition: all 1s; }
+
+// .slideIn {
+//   opacity: 1;
+//   -webkit-transform: translateX(0px);
+//           transform: translateX(0px); }
+.nav_border{
+    height: 20px;
+    margin-top: 10px;
+}
+.dropdown-item{
+    font-weight: 400;
+}
