@@ -7468,4 +7468,8 @@ body {
 .bg_nav {
   background-color: rgba(0, 0, 0, 0.5); }
 
+.nav-item:hover {
+  background: rgba(0, 0, 0, 0.5);
+  transition: all 1s; }
+
 /*# sourceMappingURL=all.css.map */
