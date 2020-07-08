@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.0/animate.min.css">
     <link rel="stylesheet" href="stylesheets/all.css">
 
     <title>demo</title>
@@ -14,7 +15,7 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg_nav bg-white py-4 position-fixed w-100">
         <a class="navbar-brand" href="#">
-            <img src="https://z110x119c911.github.io/shop_demo/source/images/WL-SOLOMO2 .png" width="100" height="60" class="d-inline-block align-top" alt="">
+            <img class="d-inline-block align-top" src="https://z110x119c911.github.io/shop_demo/source/images/WL-SOLOMO2 .png" width="100" height="60" alt="">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -22,56 +23,75 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link py-3 px-5" href="#">首頁</a>
+                <li class="nav-item rounded-pill">
+                    <a class="nav-link py-3 px-5 " href="#">Home</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item rounded-pill">
                     <a class="nav-link py-3 px-5" href="#">關於我們</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item rounded-pill">
                     <a class="nav-link py-3 px-5" href="#">最新消息</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link py-3 px-5" href="#">部落格</a>
+                <li class="nav-item rounded-pill">
+                    <a class="nav-link py-3 px-5" href="#">技術服務</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item rounded-pill">
                     <a class="nav-link py-3 px-5" href="#">相簿</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link py-3 px-5" href="#">服務</a>
+                <li class="nav-item rounded-pill">
+                    <a class="nav-link py-3 px-5" href="#">部落格</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link py-3 px-5" href="#">聯絡</a>
+                <li class="nav-item rounded-pill">
+                    <a class="nav-link py-3 px-5" href="#">聯絡我們</a>
                 </li>
-                <li class="nav-item">
+                <!-- <li class="nav-item rounded-pill">
                     <div class="dropdown">
-                        <a class="nav-link dropdown-toggle py-3 pr-5" id="dropdownMenuButton" href="#">更多</a>
-                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                            <a class="dropdown-item" href="#">Action</a>
-                            <a class="dropdown-item" href="#">Another action</a>
-                            <a class="dropdown-item" href="#">Something else here</a>
+                        <a class="nav-link dropdown-toggle py-3 px-5" data-toggle="dropdown" href="#">更多</a>
+                        <div id="test" class="dropdown-menu animate__animated animate__slideInDown animate__faster">
+                            <a class="dropdown-item" href="#">aaa</a>
+                            <a class="dropdown-item" href="#">bbb</a>
+                            <a class="dropdown-item" href="#">ccc</a>
                         </div>
                     </div>
-                </li>
+                </li> -->
             </ul>
             <!-- <a class="nav-link" href="#"><i class="fas fa-search fa-2x"></i></a> -->
         </div>
     </nav>
     
-    <header>
-        <div class="jumbotron bg_img">
-            <h1 class="display-4">Hello, world!</h1>
-            <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to
-                featured content or information.</p>
-            <hr class="my-4">
-            <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-            <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+    <!--PC-->
+    <header class="d-none bg_img">
+        <div class="row justify-content-center">
+            <div class="jumbotron bg-transparent col-6 py-2 mb-0 mt-6">
+                <h1 class="display-4 font-weight-normal text-logo_yellow">世界通道<br>World Line</h1>
+                <label class="h3 bg-dark text-white" for="">提供全球會員共享互利的新經濟模式</label>
+                <br>
+                <label class="h5" for="">(全球唯一採用公鏈流通貨幣為指定商品)</label>
+            </div>
         </div>
     </header>
-    
+
+    <!--mobile-->
+    <header class="d-md-block bg_img">
+        <div class="row justify-content-center">
+            <div class="jumbotron bg-transparent py-2 mb-0 mt-6">
+                <h1 class="display-4 font-weight-normal text-logo_yellow">世界通道<br>World Line</h1>
+                <label class="h3 bg-dark text-white" for="">提供全球會員共享互利的新經濟模式</label>
+                <br>
+                <label class="h5" for="">(全球唯一採用公鏈流通貨幣為指定商品)</label>
+            </div>
+        </div>
+    </header>
+
+    <section class="bg-light py-4">
+        <div class="container">
+            世界通道是以去中心化結構+公鏈交易所+期貨概念+共享共銷 +易物通貨+幣幣匯兌機制,提供全球會員共享互利的新經濟模式 (全球唯一採用公鏈流通貨幣為指定商品)
+        </div>
+    </section>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-    <script src="js/all.js"></script>
     <script src="js/vendors.js"></script>
+    <script src="js/all.js"></script>
 </body>
 
 </html>

@@ -1,8 +1,4 @@
 "use strict";
 
-$(document).ready(function () {
-  $('.slide_animate').each(function () {
-    $('.slide_animate').addClass('slideIn');
-  });
-});
+$(document).ready(function () {});
 //# sourceMappingURL=all.js.map

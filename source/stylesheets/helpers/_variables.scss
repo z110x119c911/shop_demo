@@ -89,6 +89,7 @@ $theme-colors: map-merge(
     "light":      $light,
     "dark":       $dark,
     "main_blue":  #157ed2,
+    "logo_yellow": #ff9000,
   ),
   $theme-colors
 );
@@ -140,7 +141,7 @@ $spacers: map-merge(
     3: $spacer,
     4: ($spacer * 1.5),
     5: ($spacer * 3),
-    6: 150px
+    6: 20%
   ),
   $spacers
 );
