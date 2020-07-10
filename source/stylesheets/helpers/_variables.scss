@@ -88,8 +88,11 @@ $theme-colors: map-merge(
     "danger":     $danger,
     "light":      $light,
     "dark":       $dark,
-    "main_blue":  #157ed2,
-    "logo_yellow": #ff9000,
+    "bg_content":  #dcdcdc,
+    "logo_yellow": #febf20,
+    "logo_bg": #d0e0e6,
+    "footer_bg": rgb(245, 242, 242),
+    "footer_text": #888,
   ),
   $theme-colors
 );
@@ -141,7 +144,9 @@ $spacers: map-merge(
     3: $spacer,
     4: ($spacer * 1.5),
     5: ($spacer * 3),
-    6: 20%
+    6: 210px,
+    7: 150px,
+    8: 100px,
   ),
   $spacers
 );
