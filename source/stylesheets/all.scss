@@ -58,5 +58,15 @@ p{
     resize: none;
     height: 200px;
 }
-
 //WTNS
+.list-height ul li{
+    padding-top: 30px;
+}
+.list-height ul{
+    padding-top: 15px;
+}
+@media (min-width: 768px) {
+    .list-height {
+        
+    }
+}
