@@ -43,7 +43,7 @@ gulp.task('clean', function () {
 
 gulp.task('image-min', () => 
     gulp.src('./source/images/*')
-        //.pipe(imagemin()) //初始值
+        .pipe(imagemin()) //初始值
         .pipe(gulpif(options.env === 'production', imagemin()))//加入判斷式，開發完成輸出才壓縮，提高開發速度。
         .pipe(gulp.dest('./public/images'))
 );
@@ -54,7 +54,7 @@ gulp.task('copyHTML',function(){
     return gulp.src('./source/**/*.html')
         .pipe(plumber())
         //.pipe(htmlmin({ collapseWhitespace: true }))
-        .pipe(gulpif(options.env === 'production', htmlmin({ collapseWhitespace: true })))
+        //.pipe(gulpif(options.env === 'production', htmlmin({ collapseWhitespace: true })))
         .pipe(gulp.dest('./public/'))
         .pipe(browserSync.stream());
 })
@@ -80,7 +80,7 @@ gulp.task('sass', function () {
             includePaths: ['./node_modules/bootstrap/scss']
         }).on('error', sass.logError))
         .pipe(postcss([autoprefixer()])) //自動判斷增加前綴詞，版本至package.json修改
-        .pipe(gulpif(options.env === 'production',cleanCSS()))
+        //.pipe(cleanCSS())
         .pipe(sourcemaps.write('.'))
         .pipe(gulp.dest('./public/stylesheets'))
         .pipe(browserSync.stream());  //自動更新網站sass
@@ -138,7 +138,7 @@ gulp.task('watch', function (done) {
 //依序執行任務
 gulp.task('default',
     gulp.parallel(
-        'copyHTML', 'sass', 'babel','image-min' ,
+        'copyHTML' , 'sass', 'babel','image-min' ,
          'vendorJs', 'browser-sync' , 'watch')
 )
 //發佈正式版依序執行任務
